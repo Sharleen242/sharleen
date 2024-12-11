@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="java script.js" defer></script>
+</head>
+<body>
+    <h1>Weather Update App</h1>
+    <!---time section-->
+    <div class="time-display"></div>
+
+    <div class="container">
+        <div class="weather-input">
+          <h3>Enter a City Name</h3>
+          <!--search section-->
+          <input class="city-input" type="text" placeholder="E.g.,Lusaka">
+          <button class="search-btn">Search</button>
+          <div class="separator"></div>
+          <button class="location-btn">Use Current Location</button>
+        </div>
+        <!--the user current location-->
+        <div class="weather-data">
+            <div class="current-weather">
+              <div class="details">
+                <h2>_______ ( ______ )</h2>
+                <h6>Temperature: __°C</h6>
+                <h6>Wind: __ M/S</h6>
+                <h6>Humidity: __%</h6>
+            </div>
+        </div>
+        
+        <!--days forecast and the card section-->
+            <div class="days-forecast">
+                <h2>5-Day Forecast</h2>
+                <ul class="weather-cards">
+                  <li class="card">
+                    <h3>( ______ )</h3>
+                    <h6>Temp: __C</h6>
+                    <h6>Wind: __ M/S</h6>
+                    <h6>Humidity: __%</h6>
+                </li>
+                <li class="card">
+                    <h3>( ______ )</h3>
+                    <h6>Temp: __C</h6>
+                    <h6>Wind: __ M/S</h6>
+                    <h6>Humidity: __%</h6>
+                </li>
+                <li class="card">
+                    <h3>( ______ )</h3>
+                    <h6>Temp: __C</h6>
+                    <h6>Wind: __ M/S</h6>
+                    <h6>Humidity: __%</h6>
+                </li>
+                <li class="card">
+                    <h3>( ______ )</h3>
+                    <h6>Temp: __C</h6>
+                    <h6>Wind: __ M/S</h6>
+                    <h6>Humidity: __%</h6>
+                </li>
+                <li class="card">
+                    <h3>( ______ )</h3>
+                    <h6>Temp: __C</h6>
+                    <h6>Wind: __ M/S</h6>
+                    <h6>Humidity: __%</h6>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+    <section id="weather-map">
+        <h1 class="heders">Map</h1>
+        <div id="map" style="height: 400px;"></div>
+    </section>
+    
+    <section class="footer">
+        <h4>About Us</h4>
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+            <p>Lusaka</p>
+            <p class="mt-4"><strong>Phone:</strong> <span>+260767739147</span></p>
+            <p><strong>Email:</strong> <span>sharlyteemurambiwa@gmail.com</span></p>
+            <br>
+            <p> 
+                <span>©Copyright</span> LUSAKA. All Rights Reserved, Desiged and maintained by:SHARLEEN T MURAMBIWA SIN: 2311983347. 
+            <p>
+            <p>   
+                <a href="http://icuzambia.net">ICU Zambia</a>  //  <a  href="http://zrdc.org">ZRDC</a>
+            </p>
+            <div class="iconss">
+        <a href="https://web.facebook.com/photo.php?fbid=445990804463202&set=pb.100071568594673.-2207520000&type=3"><img class="facebook" src="icons/facebook-f.svg"></a>
+        <a href="https://www.instagram.com/sharlyteemurambiwa?igsh=cXRmcWVkZm03eHZ2&utm_source=qr"><img class="instagram" src="icons/square-instagram.svg"></a>  
+    </div>
+    </section>
+            
+</body>
+</html>
